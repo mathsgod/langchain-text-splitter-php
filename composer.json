@@ -1,0 +1,20 @@
+{
+    "name": "mathsgod/langchain-text-splitter",
+    "description": "A PHP library to split text into sentences and words.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Raymond Chong",
+            "email": "mathsgod@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Langchain\\TextSplitter\\": "src/"
+        }
+    }
+}
