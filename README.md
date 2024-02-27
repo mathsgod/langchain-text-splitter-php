@@ -9,7 +9,7 @@ Includes multi language support.
 ## Installation
 
 ```bash
-php composer require mathsgod/langchain-text-splitter
+composer require mathsgod/langchain-text-splitter
 ```
 
 
