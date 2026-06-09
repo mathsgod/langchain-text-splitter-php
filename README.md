@@ -6,12 +6,16 @@ This library is based on https://github.com/kambo-1st/langchain-php
 
 Includes multi language support.
 
+## Requirements
+
+- PHP >= 8.1
+- ext-mbstring
+
 ## Installation
 
 ```bash
 composer require mathsgod/langchain-text-splitter
 ```
-
 
 ## Example
 
@@ -55,3 +59,38 @@ Array
 )
 */
 ```
+
+## Splitters
+
+### `RecursiveCharacterTextSplitter`
+
+Recursively splits text by trying a list of separators (`["\n\n", "\n", " ", ""]` by default) until each piece fits within `chunk_size`. Suitable for general text.
+
+```php
+$ts = new RecursiveCharacterTextSplitter([
+    "chunk_size" => 500,
+    "chunk_overlap" => 50,
+    "separators" => ["\n\n", "\n", " ", ""], // optional
+]);
+```
+
+### `CharacterTextSplitter`
+
+Splits text by a single configurable separator (`"\n\n"` by default) and merges the pieces into chunks of at most `chunk_size` characters.
+
+```php
+$ts = new CharacterTextSplitter([
+    "chunk_size" => 500,
+    "chunk_overlap" => 50,
+    "separator" => "\n\n", // optional
+]);
+```
+
+## Running Tests
+
+```bash
+composer install
+vendor/bin/phpunit
+```
+
+Tests run on PHP 8.1 through 8.5 via GitHub Actions.
