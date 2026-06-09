@@ -1,5 +1,9 @@
 # langchain-text-splitter
 
+[![Tests](https://github.com/mathsgod/langchain-text-splitter-php/actions/workflows/tests.yml/badge.svg)](https://github.com/mathsgod/langchain-text-splitter-php/actions/workflows/tests.yml)
+[![Latest Stable Version](https://poser.pugx.org/mathsgod/langchain-text-splitter/v)](https://packagist.org/packages/mathsgod/langchain-text-splitter)
+[![License](https://poser.pugx.org/mathsgod/langchain-text-splitter/license)](https://packagist.org/packages/mathsgod/langchain-text-splitter)
+
 A simple text splitter that splits text into chunks of a given size with a given overlap.
 
 This library is based on https://github.com/kambo-1st/langchain-php
