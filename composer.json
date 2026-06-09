@@ -13,9 +13,17 @@
         "php": ">=8.0.0",
         "ext-mbstring": "*"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
     "autoload": {
         "psr-4": {
             "Langchain\\TextSplitter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Langchain\\TextSplitter\\Tests\\": "tests/"
         }
     }
 }
